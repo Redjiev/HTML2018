@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="CSS/BurtonLogin.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+        }
+        div.form-group {
+            width:500px;
+            padding:20px;
+        }
+        input {
+            float:right;
+            width:300px;
+        }
+        .radio {
+            width: 150px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .radio input {
+            width: 70px;
+        }
+        li {
+            float: left;
+        }
+
+        .checkbox {
+            float: right;
+        }
+
+
+
+    </style>
+</head>
+<body>
+<h1>Formuliertje</h1>
+<h2>Burton Education</h2>
+<form action="https://www.savatarian.com/html5/form.php" method="get">
+
+    <div id="kolom1" class="form-group">
+        <label for="voornaam">Voornaam</label>
+        <input type="tekst" name="voornaam" id="voornaam">
+    </div>
+
+    <div class="form-group">
+        <label>
+            Tussenvoegsel
+            <input type="tekst" name="tussenvoegsel">
+        </label>
+    </div>
+
+    <div class="form-group">
+        <label>
+            Achternaam
+            <input type="tekst" name="achternaam">
+        </label>
+    </div>
+
+    <div class="form-group">
+        <div id="titel">Geslacht</div>
+        <label class="radio">
+            <input type="radio" name="geslacht" value="man"/>
+            <div>Man</div>
+        </label>
+        <label class="radio">
+            <input type="radio" name="geslacht" value="vrouw"/>
+            <div>Vrouw</div>
+        </label>
+    </div>
+    <div class="form-group">
+        <label for="kleuren ogen">Kleur ogen</label>
+        <select name="kleur-ogen" id="kleuren ogen">
+            <option>groen</option>
+            <option>blauw</option>
+            <option>bruin</option>
+        </select>
+    </div>
+
+    <li>
+        <input type="date" name="=geboortendatum" />
+    </li>
+
+    <br>
+    <br>
+    <label for="omschrijving">Omschrijving</label>
+    <textarea cols="60" rows="10" name="omschrijving"></textarea>
+    </div>
+
+    <div>
+    <label for="lekker eten">Lekker eten:</label>
+    <input type="checkbox" name="lekker eten" value="sperciebonen">
+    <span class="checkbox">sperciebonen</span>
+    <input type="checkbox" name="lekker eten" value="aardappelen">
+    <span class="checkbox">aardappelen</span>
+    <input type="checkbox" name="lekker eten" value="hamburger">
+    <span class="checkbox">hamburger</span>
+    </div>
+    <li>
+        <input type="submit" name="knop" />
+    </li>
+</form>
+</body>
+</html>
